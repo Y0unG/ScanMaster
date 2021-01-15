@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScanMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+@@include('_navbar.html')
+
+    @@include('_header.html')
+
+    <main class="main">
+
+        <!-- SCAN -->
+        <div class="main__item" data-aos="fade-in">
+            <h2 class="title text-center ">Portable Scanner in your pocket</h2>
+            <h3 class="subtitle">Enjoy scanning anytime</h3>
+            <div class="scan_list__container container-flex center">
+                <ul class="scan_list">
+                    <li>
+                        Scan documents, books, receipts in one tap
+                    </li>
+                    <li>
+                        Share and Collaborate
+                    </li>
+                </ul>
+                <ul class="scan_list">
+                    <li>
+                        OCR, Convert into editable text
+                    </li>
+                    <li>
+                        Sign documents
+                    </li>
+                </ul>
+            </div>
+            <div class="container-flex center">
+                <img src="img/call1.png" alt="" class="scan__img">
+                <button class="btn main__btn" onclick="show()">Try for free</button>
+            </div>
+        </div>
+
+        <!-- TRIO -->
+        <div class="main__item" data-aos="fade-in">
+            <h2 class="title text-center">Manage your documents easily</h2>
+            <h3 class="subtitle">Scan, Sign and Export</h3>
+            <img src="img/trio_big.png" alt="" class="trio__img trio_big">
+            <img src="img/trio_small.png" alt="" class="trio__img trio_sm">
+            <button class="btn main__btn" onclick="show()">Try for free</button>
+        </div>
+
+        <!-- RATE -->
+        <div class="main__item" data-aos="fade-in">
+            <h2 class="title text-center">People love ScanMaster</h2>
+            <h3 class="subtitle">Become a member of our global community</h3>
+            <div class="rate__container">
+                <img src="img/logo-big.png" alt="">
+                <img src="img/rate-head.png" alt="">
+            </div>
+        </div>
+    </main>
+
+@@include('_footer.html')
+
+<div class="pop-up__container">
+    <h2 class="title text-center">TRY FOR FREE</h2>
+    <form>
+        <input class="" placeholder="Your Email">
+        <button type="submit" class="btn main__btn">Try for free</button>
+    </form>
+    <button class="close" onclick="unshow()">X</button>
+</div>
+
+    <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
